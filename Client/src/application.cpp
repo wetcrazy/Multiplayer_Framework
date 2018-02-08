@@ -47,12 +47,6 @@ Application::Application() :
 {
 	SetGameState(GAMESTATE_NONE);
 
-	mymissile = NULL;
-	keydown_enter = false;
-
-	
-
-	isfull_ = false;
 }
 
 /**
@@ -93,8 +87,16 @@ bool Application::Init()
 	float startw = 0.0f;
 	myship_ = new Ship(shiptype, "MyShip", startx, starty, startw);
 
+	// Boom
 	boom_tex_ = hge_->Texture_Load("boom.jpg");
 	hge_->Release();
+
+	// Missile
+	mymissile = NULL;
+	keydown_enter = false;
+
+	// Full msg
+	isfull_ = false;
 
 	// Initialize asteroids.
 	//asteroids_.push_back( new Asteroid( "asteroid.png", 100, 100, 1 ) );
@@ -282,6 +284,16 @@ void Application::Render()
 	hge_->Gfx_BeginScene();
 	hge_->Gfx_Clear(0);
 
+	// Render Text
+	if (isfull_)
+	{
+		paint.reset(new hgeFont("font1.fnt"));
+		paint->printf(5, 5, HGETEXT_LEFT, "FULL");
+		paint.release();
+		hge_->Gfx_EndScene();		
+		return;
+	}
+
 	// Render my space ship.
 	myship_->Render();
 
@@ -305,13 +317,7 @@ void Application::Render()
 
 		itr_boom->boom_sprite_.reset(new hgeSprite(boom_tex_, itr_boom->x, itr_boom->y, 40, 20));
 		itr_boom->boom_sprite_->SetHotSpot(20, 10);
-	}	*/
-	
-	// Render Text
-	if (isfull_)
-	{
-		//hge_->
-	}
+	}	*/	
 
 	hge_->Gfx_EndScene();
 }

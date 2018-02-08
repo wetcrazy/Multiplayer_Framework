@@ -11,7 +11,7 @@ unsigned int numShips;
 
 void SendPacketProcess_NewAccept(const int SessionID)
 {	
-	numShips++;
+	numShips += 1;
 
 	if (numShips > 3)
 		SendPacketProcess_NoAccept(SessionID);
@@ -48,15 +48,18 @@ void SendPacketProcess_NoAccept(const int SessionID)
 		struct PKT_S2C_FullMessage PacketData;
 		int PacketID = PACKET_ID_S2C_FullMessage;
 
+		PacketData.isFull = true;
+
 		Packet << PacketID;
 		Packet << PacketData;
-	
+
+		NetObj.SendPacket(SessionID, Packet);
 }
 
 void SendPacketProcess_EnemyShipDisconnect( const int SessionID )
 {
     g_ShipList[SessionID].connected = false;
-
+	numShips -= 1;
     struct HNet::_PacketMessage Packet;
     int PacketID = PACKET_ID_S2C_DISCONNECTENEMYSHIP;
     Packet << PacketID;

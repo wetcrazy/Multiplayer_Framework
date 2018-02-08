@@ -5,6 +5,7 @@
 #include "movables\Asteroid.h"
 #include "movables\missile.h"
 #include <vector>
+#include "hgefont.h"
 
 enum _GAMESTATE {
     GAMESTATE_NONE = 0,
@@ -59,6 +60,7 @@ class Application
 
 		// Full message Stuff
 		bool isfull_;
+		std::auto_ptr<hgeFont> paint;
 	
     	bool Init();
     	static bool Loop();

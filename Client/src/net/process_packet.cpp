@@ -343,8 +343,8 @@ namespace Net {
 	{
 		struct PKT_S2C_FullMessage PacketData;
 		ToProcessSessoin->PacketMessage >> PacketData;
-		thisapp->SetFullMessage(true);
-		thisapp->Render();
+		thisapp->SetFullMessage(PacketData.isFull);
+		//thisapp->Render();
 		
 #ifdef _DEBUG
 		log("\nReceived: PACKET_ID_S2C_FULLMESSAGE.");
