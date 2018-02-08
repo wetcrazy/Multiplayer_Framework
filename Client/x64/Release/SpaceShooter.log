@@ -1,0 +1,5 @@
+﻿  application.cpp
+  process_packet.cpp
+  send_packet.cpp
+  Generating Code...
+LINK : fatal error LNK1181: cannot open input file 'NetLib_x86.lib'

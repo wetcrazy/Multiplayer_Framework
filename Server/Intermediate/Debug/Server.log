@@ -1,0 +1,11 @@
+﻿  send_packet.cpp
+  process_packet.cpp
+  main.cpp
+  asteroid.cpp
+  timer.cpp
+  Generating Code...
+HNet_Debug_x86.lib(NetLib.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(NetLib.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Server\bin\HNet.pdb'; linking object as if no debug info
+HNet_Debug_x86.lib(ProcessSession.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(ProcessSession.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Server\bin\HNet.pdb'; linking object as if no debug info
+HNet_Debug_x86.lib(ServerNetwork.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(ServerNetwork.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Server\bin\HNet.pdb'; linking object as if no debug info
+HNet_Debug_x86.lib(Session.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(Session.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Server\bin\HNet.pdb'; linking object as if no debug info
+  Server.vcxproj -> C:\Users\Ryane\Documents\Multiplayer_Framework\Server\bin\Server.exe

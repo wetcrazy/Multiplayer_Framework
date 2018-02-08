@@ -1,0 +1,11 @@
+﻿  timer.cpp
+  asteroid.cpp
+  main.cpp
+  process_packet.cpp
+  send_packet.cpp
+HNet_x86.lib(ServerNetwork.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in main.obj
+HNet_x86.lib(ProcessSession.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in main.obj
+HNet_x86.lib(Session.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in main.obj
+HNet_x86.lib(NetLib.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in main.obj
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+C:\Users\Ryane\Documents\Multiplayer_Framework\Server\bin\Server.exe : fatal error LNK1319: 4 mismatches detected
