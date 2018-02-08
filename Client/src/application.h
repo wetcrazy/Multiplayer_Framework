@@ -26,6 +26,12 @@ static const float DEFAULT_ACCELERATION = 50.0f;
 * Update/Render cycle.
 *
 */
+struct Boom {
+	std::auto_ptr<hgeSprite> boom_sprite_;
+	float x;
+	float y;
+};
+
 class Application
 {
     private:
@@ -41,12 +47,6 @@ class Application
 
 		//
 		HTEXTURE boom_tex_; //!< Handle to the sprite's texture for boom effect.
-
-		struct Boom{
-			std::auto_ptr<hgeSprite> boom_sprite_;
-			float x;
-			float y;
-		};
 
 		std::vector<Boom *> boom_list_; //!< The sprite used to display the ship
 		Boom * single_boom_;

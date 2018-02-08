@@ -50,8 +50,7 @@ Application::Application() :
 	mymissile = NULL;
 	keydown_enter = false;
 
-	boom_tex_ = hge_->Texture_Load("boom.jpg");
-	hge_->Release();
+	
 
 	isfull_ = false;
 }
@@ -93,6 +92,9 @@ bool Application::Init()
 	float starty = (float)((rand() % 400) + 100);
 	float startw = 0.0f;
 	myship_ = new Ship(shiptype, "MyShip", startx, starty, startw);
+
+	boom_tex_ = hge_->Texture_Load("boom.jpg");
+	hge_->Release();
 
 	// Initialize asteroids.
 	//asteroids_.push_back( new Asteroid( "asteroid.png", 100, 100, 1 ) );

@@ -1,15 +1,9 @@
-﻿  send_packet.cpp
+﻿  application.cpp
+  Generating Code...
+  Compiling...
   process_packet.cpp
   ship.cpp
-  movables.cpp
-  missile.cpp
   asteroid.cpp
   main.cpp
-  application.cpp
-  timer.cpp
   Generating Code...
-HNet_Debug_x86.lib(ClientNetwork.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(ClientNetwork.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Client\Intermediate\Debug\HNet.pdb'; linking object as if no debug info
-HNet_Debug_x86.lib(NetLib.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(NetLib.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Client\Intermediate\Debug\HNet.pdb'; linking object as if no debug info
-HNet_Debug_x86.lib(ProcessSession.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(ProcessSession.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Client\Intermediate\Debug\HNet.pdb'; linking object as if no debug info
-HNet_Debug_x86.lib(Session.obj) : warning LNK4099: PDB 'HNet.pdb' was not found with 'HNet_Debug_x86.lib(Session.obj)' or at 'C:\Users\Ryane\Documents\Multiplayer_Framework\Client\Intermediate\Debug\HNet.pdb'; linking object as if no debug info
   SpaceShooter.vcxproj -> C:\Users\Ryane\Documents\Multiplayer_Framework\Client\bin\SpaceShooter_d.exe
